@@ -15,14 +15,22 @@ import javax.persistence.Table;
 	    @GeneratedValue
 	    private Integer id;
 	    private String name;
+	    private int sal;
 	    
 	    public Integer getId(){
 	        return id;
 	    }
-	   
-		public void setId(final Integer id){
+	    
+	    public void setId(final Integer id){
 	        this.id=id;
 	    }
+		public int getSal() {
+			return sal;
+		}
+
+		public void setSal(int sal) {
+			this.sal = sal;
+		}
 	    
 	    public String getName(){
 	        return name;
@@ -30,16 +38,18 @@ import javax.persistence.Table;
 	    public void setName(final String name){
 	        this.name=name;
 	    }
-	    public Employee(Integer id,String name){
+	    public Employee(Integer id,String name, int sal){
 	        this.id=id;
 	        this.name=name;
+	        this.sal=sal;
 	    }
 	    public Employee(){
 	    }
-	    @Override
-	   	public String toString() {
-	   		return "Employee [id=" + id + ", name=" + name + "]";
-	   	}
-	  
+
+		@Override
+		public String toString() {
+			return "Employee [id=" + id + ", name=" + name + ", sal=" + sal + "]";
+		}
+	   
 	}
 

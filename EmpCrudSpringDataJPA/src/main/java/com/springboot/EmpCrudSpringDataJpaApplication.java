@@ -8,6 +8,6 @@ public class EmpCrudSpringDataJpaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmpCrudSpringDataJpaApplication.class, args);
-	}
+		}
 
 }
